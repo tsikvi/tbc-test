@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'BPG Rioni Arial';
+    src: url('../fonts/bpg-rioni-arial-webfont.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/bpg-rioni-arial-webfont.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('../fonts/bpg-rioni-arial-webfont.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/bpg-rioni-arial-webfont.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/bpg-rioni-arial-webfont.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/bpg-rioni-arial-webfont.svg#bpg_rioni_arialregular') format('svg');
+    /* Legacy iOS */
+}
+
+
+@font-face {
+    font-family: 'TBCSailec-Bold';
+    src: url('../fonts/TBCSailec-Bold.woff2');
+}
+
+
+@font-face {
+    font-family: 'TBCSailec-Medium';
+    src: url('../fonts/TBCSailec-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'TBCSailec-Regular';
+    src: url('../fonts/TBCSailec-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'TbcDin_Mtavruli_bold';
+    src: url('../fonts/TbcDin_Mtavruli_Bold.woff');
+}
+
+/* @font-face {
+    font-family: 'TBC-mtavruli-regular';
+    src: url('../fonts/tbcdin_mtavruli_regular-webfont.woff2');
+} */

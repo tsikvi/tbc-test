@@ -1,0 +1,1150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+}
+
+.header {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 90px;
+    height: 96px;
+    justify-content: space-between;
+}
+
+.menu_left {
+    display: flex;
+}
+
+.menu_right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+
+}
+
+.menu_right>div {
+
+    margin: 20px;
+    margin-top: 0px;
+    border: transparent;
+}
+
+.menu_right>div:hover {
+    cursor: pointer;
+}
+
+
+.fa-search {
+    color: gray;
+    font-size: 25px;
+}
+
+.search {
+    padding: 1em;
+
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+
+}
+
+.search:hover {
+    background-color: rgb(234, 231, 231);
+    border-radius: 5%;
+}
+
+.internet-bank {
+    padding: 1em;
+    /* use px when you want the size to be fixed and use rem / em 
+    when you want the size to be adaptive/dynamic to the size of the system. */
+    display: inline-block;
+    background-color: #0f437f;
+    height: 48px;
+    width: 212px;
+    border-radius: 5%;
+    border-color: #0f437f;
+    text-align: center;
+
+
+}
+
+.internet-bank a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+
+.fa-arrow-up-right-from-square {
+    color: white;
+    margin-right: 5px;
+}
+
+.selected-language {
+    font-weight: bold;
+}
+
+.selected-language ul {
+    display: none;
+
+}
+
+.lang-menu:hover .selected-language ul {
+    display: block;
+    position: absolute;
+
+}
+
+.lang-menu:hover .selected-language ul li {
+    list-style: none;
+}
+
+
+.lang-menu:active .selected-language ul {
+    display: block;
+    position: absolute;
+
+}
+
+.lang-menu:active .selected-language ul li {
+    list-style: none;
+}
+
+
+.logo {
+    width: 56px;
+    height: 49px;
+    margin-top: 20px;
+    background-image: url("logo.png");
+    background-size: contain;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.navbar_menu ul {
+    display: flex;
+    margin-top: 15px;
+    margin-left: 30px;
+    list-style: none;
+    align-items: center;
+
+}
+
+.navbar_menu ul li {
+    margin: 25px;
+    font-size: 14px;
+    /* letter-spacing: 1px; */
+    font-family: 'TBCSailec-Regular';
+}
+
+.navbar_menu ul li:hover {
+    cursor: pointer;
+}
+
+.navbar_menu ul li:nth-child(1) {
+    font-weight: bold;
+
+}
+
+.navbar_menu ul li:nth-child(2),
+.navbar_menu ul li:nth-child(3) {
+    font-weight: bold;
+    color: grey;
+
+}
+
+.navbar_menu ul li:nth-child(2):hover,
+.navbar_menu ul li:nth-child(3):hover {
+    color: blue;
+
+}
+
+.slideshow {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+.navigation {
+    position: absolute;
+    top: 600px;
+    width: 90%;
+    display: flex;
+    margin-left: 70px;
+
+}
+
+.bar {
+    width: 350px;
+    height: 100px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    border: 2px solid transparent;
+
+}
+
+.bar:hover {
+    background-color: #eff1f1;
+
+}
+
+.nav1 {
+    display: flex;
+
+    font-family: 'TBCSailec-Medium';
+}
+
+.nav2 {
+    display: flex;
+
+    font-family: 'TBCSailec-Medium';
+}
+
+.nav3 {
+    display: flex;
+
+    font-family: 'TBCSailec-Medium';
+}
+
+.nav4 {
+    display: flex;
+
+    font-family: 'TBCSailec-Medium';
+}
+
+.nav1 p {
+    font-size: 15px;
+    margin-left: 1px;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+
+.nav2 p {
+    font-size: 15px;
+    margin-left: 1px;
+    margin-top: 15px;
+    color: #5E5E5E;
+}
+
+.nav3 p {
+    font-size: 15px;
+    margin-left: 1px;
+    margin-top: 15px;
+    color: #5E5E5E;
+}
+
+.nav4 p {
+    font-size: 15px;
+    margin-left: 1px;
+    margin-top: 5px;
+    color: #5E5E5E;
+}
+
+
+.nav1 img {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.nav2 img {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.nav3 img {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.nav4 img {
+    height: 60px;
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+
+input[name=r] {
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.slides {
+    width: 400%;
+    display: flex;
+}
+
+.slide {
+    width: 25%;
+    transition: 0.5s;
+
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+
+#img1:checked~.s1 {
+    margin-left: 0;
+}
+
+#img2:checked~.s1 {
+    margin-left: -25%;
+}
+
+#img3:checked~.s1 {
+    margin-left: -50%;
+}
+
+#img4:checked~.s1 {
+    margin-left: -75%;
+}
+
+
+.textonimage {
+    position: relative;
+    bottom: 85%;
+    left: 50px;
+    font-size: 50px;
+    color: white;
+    font-family: 'TBCSailec-Bold';
+}
+
+.textonimage1 {
+    position: relative;
+    bottom: 90%;
+    left: 50px;
+    font-size: 50px;
+    color: white;
+    font-family: 'TBCSailec-Bold';
+}
+
+.textonimage2 {
+    position: relative;
+    bottom: 87%;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+    font-family: 'TBCSailec-Bold';
+    font-weight: bold;
+}
+
+
+
+.biznesdajildoeba {
+    position: relative;
+    width: 160px;
+    height: 40px;
+    bottom: 80%;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f437f;
+    border: transparent;
+    border-radius: 5px;
+    display: flex;
+}
+
+
+
+
+.biznesdajildoeba:hover,
+.startupnakrebi:hover {
+    background-color: blue;
+}
+
+
+.startupnakrebi {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    bottom: 80%;
+    left: 50px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f437f;
+    border: transparent;
+    border-radius: 5px;
+}
+
+
+.biznesdajildoeba a {
+    position: relative;
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-size: 15px;
+}
+
+.startupnakrebi a {
+    position: relative;
+    text-decoration: none;
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-size: 16px;
+    color: white;
+}
+
+.biznesdajildoeba i {
+    position: relative;
+    margin-left: 25px;
+    margin-top: 10px;
+
+}
+
+.startupnakrebi i {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.biznestreningebi {
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content: space-between;
+
+}
+
+.biznestreningebi img {
+    width: 500px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.text-biz-treningebi h1 {
+    font-size: 50px;
+    margin-left: 150px;
+    font-family: 'TBCSailec-Bold';
+}
+
+.text-biz-treningebi p {
+    font-family: 'TBCSailec-Medium';
+
+    font-size: 17px;
+    margin-left: 150px;
+}
+
+.biz-treningebi-detalurad-ghilaki {
+    margin-left: 150px;
+    margin-top: 10%;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f437f;
+    border: transparent;
+    border-radius: 5px;
+
+
+}
+
+.biz-treningebi-detalurad-ghilaki i {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.biz-treningebi-detalurad-ghilaki a {
+    color: white;
+    text-decoration: none;
+    margin-top: 6px;
+    margin-left: 10px;
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-size: 15px;
+}
+
+.biznesfinansireba {
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.text-biz-dafinanseba h1 {
+    margin-top: 150px;
+    font-size: 50px;
+    font-family: 'TBCSailec-Bold';
+
+}
+
+.text-biz-dafinanseba p {
+    margin-top: 30px;
+    margin-right: 250px;
+    font-family: 'TBCSailec-Medium';
+}
+
+.moidzie-dafinanseba-ghilaki {
+
+    margin-top: 10%;
+    width: 250px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f437f;
+    border: transparent;
+    border-radius: 5px;
+
+
+}
+
+.moidzie-dafinanseba-ghilaki i {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.moidzie-dafinanseba-ghilaki a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-size: 15px;
+}
+
+.bussines-blog {
+    margin-left: 70px;
+    margin-top: 100px;
+}
+
+.bussines-blog h2 {
+    font-family: 'TBCSailec-Regular';
+}
+
+.bussines-blog-blogs {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 50px;
+    margin-right: 70px;
+    justify-content: space-between;
+}
+
+.bussines-blog-blogs h3,
+h4 {
+    color: white;
+}
+
+.bussines-blog-blogs h3 {
+    font-size: 20px;
+}
+
+
+.date {
+    margin-top: 150px;
+}
+
+.date h4 {
+    font-family: 'TBCSailec-Bold';
+}
+
+.blog-1,
+.blog-2,
+.blog-3 {
+    height: 300px;
+    width: 400px;
+    padding: 30px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.title h3 {
+    font-family: 'TBCSailec-Bold';
+}
+
+
+.blog-1:hover,
+.blog-2:hover,
+.blog-3:hover {
+    cursor: pointer;
+}
+
+.blog-1 {
+    background-image: url('https://www.tbcbusiness.ge/file/uploads/Images/d4169e18-c6ae-4b9b-969e-f8ab593815ec.png');
+    background-size: cover;
+}
+
+.blog-2 {
+    background-image: url('https://www.tbcbusiness.ge/file/uploads/Images/0c011e48-a455-46af-bd5d-32f57d7177bc.jpg');
+    background-size: cover;
+}
+
+.blog-3 {
+    background-image: url('https://www.tbcbusiness.ge/file/uploads/Images/67358d6c-fbab-49bc-877b-72012c58184b.png');
+    background-size: cover;
+}
+
+
+
+.startuperi {
+    display: flex;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content: space-between;
+
+}
+
+.startuperi img {
+    width: 489px;
+    height: 489px;
+    border-radius: 5px;
+}
+
+.text-startuperi h1 {
+    font-size: 50px;
+    margin-left: 150px;
+    margin-top: 15%;
+    font-family: 'TBCSailec-Bold';
+}
+
+.text-startuperi p {
+    font-family: 'TBCSailec-Regular';
+    margin-left: 150px;
+    font-size: 20px;
+    color: #5E5E5E;
+}
+
+.startuperi-detalurad-ghilaki {
+    margin-left: 150px;
+    margin-top: 10%;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f437f;
+    border: transparent;
+    border-radius: 5px;
+
+
+}
+
+.startuperi-detalurad-ghilaki i {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.startuperi-detalurad-ghilaki a {
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-size: 15px;
+}
+
+.tbc-gadaxdebi {
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.tbc-gadaxdebi h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: 'TBCSailec-Bold';
+}
+
+.gadakhdebi-martivad {
+    font-size: 18px;
+    color: #959494;
+    font-style: bold;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    font-family: 'TBCSailec-Bold';
+}
+
+.el-komercia-pos-term {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+
+}
+
+.el-komercia-pos-term div {
+    width: 650px;
+    height: 120px;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 5px;
+
+}
+
+.online-maghazia,
+.el-komercia,
+.pos-term {
+    display: flex;
+    margin-top: 40px;
+    width: 650px;
+    height: 120px;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 5px;
+
+}
+
+.online-maghazia:hover,
+.el-komercia:hover,
+.pos-term:hover {
+    background-color: rgb(249, 246, 246);
+    cursor: pointer;
+}
+
+.online-maghazia:hover i,
+.el-komercia:hover i,
+.pos-term:hover i {
+    color: black;
+}
+
+.online-maghazia img,
+.el-komercia img,
+.pos-term img {
+    width: 45px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.online-maghazia div,
+.el-komercia div,
+.pos-term div {
+    width: 540px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 50px;
+    border: transparent;
+    font-size: 18px;
+    color: #222222;
+    font-family: 'TBCSailec-Regular';
+}
+
+.online-maghazia i,
+.el-komercia i,
+.pos-term i {
+
+    margin-top: 55px;
+    color: gray;
+}
+
+.gaiget-meti {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.gaiget-meti i {
+    color: rgb(6, 6, 73);
+    margin-top: 2px;
+}
+
+.gaiget-meti a {
+    text-decoration: none;
+    color: rgb(6, 6, 73);
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-size: 14px;
+}
+
+.gaiget-meti:hover {
+    cursor: pointer;
+    color: #155EB2;
+
+}
+
+.airchiet-barati {
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 70px;
+    margin-top: 70px;
+    letter-spacing: 0.7px;
+    font-family: 'TBCSailec-Bold';
+
+}
+
+.biznes-baratebi {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+
+.box-1 {
+    flex: 1;
+    font-size: 18px;
+    color: #909092;
+    font-weight: bold;
+    font-family: 'TBCSailec-Bold';
+}
+
+.box-2 {
+    flex: 3;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'TBCSailec-Bold';
+}
+
+.box-3 {
+    flex: 3;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-family: 'TBCSailec-Bold';
+}
+
+.baratebi-images {
+    display: flex;
+    margin-left: 260px;
+    margin-right: 370px;
+    margin-top: 30px;
+    justify-content: space-between
+}
+
+.detalurad-ghilakebi {
+    display: flex;
+    margin-left: 255px;
+    margin-right: 465px;
+    margin-top: 30px;
+    justify-content: space-between
+}
+
+.baratebi-detalurad-ghilaki-1,
+.baratebi-detalurad-ghilaki-2 {
+    width: 190px;
+    height: 48px;
+    display: flex;
+    border: 1px solid rgb(8, 8, 111);
+    border-radius: 5px;
+    padding: 15px;
+    justify-content: space-evenly;
+    transition: 0.5s;
+
+}
+
+.baratebi-detalurad-ghilaki-1 a,
+.baratebi-detalurad-ghilaki-2 a {
+    color: rgb(8, 8, 111);
+    font-family: 'TbcDin_Mtavruli_bold';
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.baratebi-detalurad-ghilaki-1 i,
+.baratebi-detalurad-ghilaki-2 i {
+    color: #0F437F;
+    margin-top: 5px;
+}
+
+
+.baratebi-detalurad-ghilaki-2:hover a {
+    color: white;
+}
+
+.baratebi-detalurad-ghilaki-2:hover i {
+    color: white;
+}
+
+
+.baratebi-detalurad-ghilaki-1:hover a {
+    color: white;
+}
+
+.baratebi-detalurad-ghilaki-1:hover i {
+    color: white;
+}
+
+
+.baratebi-detalurad-ghilaki-1:hover,
+.baratebi-detalurad-ghilaki-2:hover {
+    background-color: #0F437F;
+}
+
+.comment-baratebze {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 255px;
+    margin-right: 180px;
+    justify-content: space-between;
+}
+
+.comment-baratebze p {
+    color: rgb(129, 129, 141);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'TBCSailec-Regular';
+    letter-spacing: 0.5px;
+}
+
+.baratebis-fasebi {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 90px;
+    margin-top: 50px;
+}
+
+.fasi-1 {
+    flex: 1;
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
+}
+
+.fasi-2 {
+    flex: 3;
+    color: gray;
+
+    font-size: 20px;
+    font-family: 'TBCSailec-Medium';
+}
+
+.fasi-3 {
+    flex: 3;
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 20px;
+
+    font-family: 'TBCSailec-Medium';
+}
+
+.lari150,
+.lari500 {
+    font-size: 40px;
+    color: rgb(26, 32, 79);
+    font-family: 'TBCSailec-Bold';
+
+}
+
+.distanciuri-momsaxureba-title {
+    margin-top: 120px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.distanciuri-momsaxureba-title h1 {
+    font-size: 50px;
+
+    font-family: 'TBCSailec-Bold';
+
+}
+
+.distanciuri-aghwera {
+    font-size: 18px;
+    color: #82828f;
+    font-style: bold;
+
+    margin-top: 10px;
+    font-family: 'TBCSailec-Medium';
+}
+
+.cifruli-bankingi,
+.avtomaturi-davalebebi,
+.sms-banki,
+.call-center {
+    display: flex;
+    /* margin-top: 40px; */
+    width: 650px;
+    height: 120px;
+    border: 1px solid rgb(230, 227, 227);
+    border-radius: 5px;
+
+}
+
+.cifruli-bankingi img,
+.avtomaturi-davalebebi img,
+.sms-banki img,
+.call-center img {
+    width: 45px;
+    height: 45px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.cifruli-bankingi div,
+.avtomaturi-davalebebi div,
+.sms-banki div,
+.call-center div {
+    width: 540px;
+    height: 25px;
+    margin-left: 10px;
+    margin-top: 50px;
+
+    border: transparent;
+    font-size: 18px;
+    color: #222222;
+    font-family: 'TBCSailec-Regular';
+}
+
+.cifruli-bankingi i,
+.avtomaturi-davalebebi i,
+.sms-banki i,
+.call-center i {
+
+    margin-top: 55px;
+    color: gray;
+}
+
+.distanciuri-momsaxureba {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.distanciuri-momsaxureba>div {
+    margin: 5px;
+}
+
+.moitxove-sesxi {
+    margin-top: 100px;
+    margin-left: 70px;
+    width: 650px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px transparent;
+    background: url(https://www.tbcbusiness.ge/file/uploads/Images/7d489073-32eb-45cb-b275-b8a7afb357d3.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+/* .moitxove-sesxi-image {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background: url(https://www.tbcbusiness.ge/file/uploads/Images/7d489073-32eb-45cb-b275-b8a7afb357d3.jpg) no-repeat;
+    transition: 0.7s;
+} */
+
+
+.moitxove-sesxi-image:hover {
+    transform: scale(1.1);
+}
+
+
+.moitxove-sesxi-content h2 {
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: 'TBCSailec-Bold';
+}
+
+.ganacxadis-shevseba-ghilaki {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #0f437f;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.ganacxadis-shevseba-ghilaki i {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.ganacxadis-shevseba-ghilaki a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-family: 'TbcDin_Mtavruli_bold';
+}
+
+.footer {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 100px;
+    height: 340px;
+    border: 1px transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    width: 35%;
+    height: 100%;
+    border: 1px transparent;
+}
+
+.biznesisatvis,
+.chveni-proeqtebi,
+.zogadi,
+.kontakti {
+    width: 50%;
+    height: 100%;
+    border: 1px transparent;
+}
+
+.biznesisatvis ul,
+.chveni-proeqtebi ul,
+.zogadi ul,
+.kontakti ul {
+    list-style: none;
+
+}
+
+.biznesisatvis ul li,
+.chveni-proeqtebi ul li,
+.zogadi ul li,
+.kontakti ul li {
+    margin: 10px;
+    font-family: 'TBCSailec-Regular';
+    font-size: 14px;
+    line-height: 25px;
+    color: gray;
+}
+
+.copyright-2020 {
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.copyright,
+.tbc-2020 {
+    color: gray;
+}
+
+.copyright {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.tbc-2020 {
+    margin-top: 10px;
+}
+
+.footer-logo {
+    display: flex;
+
+}
